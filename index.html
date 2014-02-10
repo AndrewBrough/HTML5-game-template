@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>2D Game</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="generator.js"></script>
+    <script type="text/javascript" src="entities.js"></script>
+    <script type="text/javascript" src="helpers.js"></script>
+    <script type="text/javascript" src="engine.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            var g = new Game();
+            g.start();
+        }
+    </script>
+</head>
+    
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+</body>
+</html>
