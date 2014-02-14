@@ -24,8 +24,8 @@ Player.prototype = {
     update: function(){
         this.position.x += this.position.targetX;
         this.position.y += this.position.targetY;
-        this.position.targetX *= 0.5;
-        this.position.targetY *= 0.5;
+        this.position.targetX *= 0.7;
+        this.position.targetY *= 0.7;
     },
     draw: function(fill){
         this.context.save();//push
@@ -58,7 +58,7 @@ var Coin = function(context, posx, posy){
 }
 Coin.prototype = {
     update: function(gameTime){
-        this.position.y+=1;
+        this.position.y+=5;
 //        console.log(this.position.y);
         //this.scale.x = Math.abs(Math.sin(gameTime/100));
     },

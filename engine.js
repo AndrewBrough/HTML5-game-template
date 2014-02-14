@@ -100,10 +100,10 @@ Game.prototype = {
     },
     checkKeys: function(){
         if(Key.isDown(Key.A)){
-            this.p1.move(-10,0);
+            this.p1.move(-5,0);
         }
         if(Key.isDown(Key.D)){
-            this.p1.move(10,0);
+            this.p1.move(5,0);
         }
     },
     tick: function(time){
